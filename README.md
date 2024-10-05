@@ -5,5 +5,5 @@ This repository contains all the necessary files and configurations required to 
 # Usage
  You can run the ready-to-use ICADnet docker container with the following command:
 ```bash
-docker run -dit --network none -v [path to input directory]:/input:ro -v /output name_of_the_docker_container.
+docker run -dit --network none -v [path_to_input_directory]:/input:ro -v /output name_of_the_docker_container.
 
