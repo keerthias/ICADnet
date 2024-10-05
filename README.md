@@ -14,6 +14,11 @@ Next, you can execute the ICADnet validation script using the following command:
 ```bash
 docker exec [CONTAINER-ID] python /Virtual_folder/run.py
 ```
+Finally, you can shut down the running container. This also removes the created /output folder and any other changes made to the container:
+
+```bash
+docker rm -v [CONTAINER-ID]
+```
 
 
 
