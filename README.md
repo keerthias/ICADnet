@@ -7,3 +7,5 @@ This repository contains all the necessary files and configurations required to 
 ```bash
 docker run -dit --network none -v [path_to_input_directory]:/input:ro -v /output name_of_the_docker_container.
 
+The -v options map the input folder into the container at /input, read-only. The last -v creates an output directory. This command outputs the Container ID, which you can also look up with:
+
