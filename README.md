@@ -4,4 +4,4 @@ ICADnet is  a prior knowledge-based framework for aneurysm detection from TOF-MR
 This repository contains all the necessary files and configurations required to set up and run ICADnet, enabling users to easily deploy and validate the network in their own environment.
 
 
-**USAGE**
+#USAGE
