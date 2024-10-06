@@ -13,9 +13,8 @@ docker load < icadnet_docker.tar
 docker run -dit --network none -v [full_path_to_input_dataset]:/input:ro -v /icadnet_docker
 ```
 
-The -v options map the input directory into the container at /input, read-only. The last -v creates an output directory. 
-
-This command also outputs the Container ID.
+The -v options map the input directory into the container at /input, read-only. The last -v creates an output directory.
+This command outputs the Container ID,  which you can also look up with the following command:
 ```bash
 docker ps
 ```
