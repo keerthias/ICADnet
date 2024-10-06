@@ -30,5 +30,6 @@ Finally, you can shut down the running container. This also removes the created 
 docker rm -v [CONTAINER-ID]
 ```
 
+Due to memory limitations of the GitHub repository, the ready-to-use Docker container can be accessed via the following link: https://shorturl.at/I5Q7z
 
 
