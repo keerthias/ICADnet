@@ -10,7 +10,7 @@ docker load < icadnet_docker.tar
 
  Then, you can run the ready-to-use icadnet_docker container with the following command:
 ```bash
-docker run -dit --network none -v [full_path_to_input_dataset]:/input:ro -v /icadnet_docker
+docker run -dit --network none -v [full_path_to_input_dataset]:/input:ro -v /output icadnet_docker
 ```
 
 The -v options map the input directory into the container at /input, read-only. The last -v creates an output directory.
