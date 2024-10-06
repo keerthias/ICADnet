@@ -3,16 +3,26 @@ ICADnet is  a prior knowledge-based framework for aneurysm detection from TOF-MR
 
 This repository contains all the necessary files and configurations required to set up and run ICADnet, enabling users to easily deploy and validate the network in their own environment.
 # Usage
- You can run the ready-to-use ICADnet docker container with the following command:
+You can load the ICADnet docker image directly from the icadnet_docker.tar using the following command:
 ```bash
-docker run -dit --network none -v [path_to_input_directory]:/input:ro -v /output name_of_the_docker_container.
+docker load < icadnet_docker.tar
 ```
 
-The -v options map the input directory into the container at /input, read-only. The last -v creates an output directory. This command outputs the Container ID.
+ Then, you can run the ready-to-use icadnet_docker container with the following command:
+```bash
+docker run -dit --network none -v [full_path_to_input_dataset]:/input:ro -v /icadnet_docker
+```
+
+The -v options map the input directory into the container at /input, read-only. The last -v creates an output directory. 
+
+This command also outputs the Container ID.
+```bash
+docker ps
+```
 Next, you can execute the ICADnet validation script using the following command:
 
 ```bash
-docker exec [CONTAINER-ID] python /Virtual_folder/run.py
+docker exec [CONTAINER-ID] python /ICADnet_dockerfolder/run.py
 ```
 Finally, you can shut down the running container. This also removes the created /output folder and any other changes made to the container:
 
